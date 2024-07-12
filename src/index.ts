@@ -73,6 +73,7 @@ export async function report(): Promise<void> {
 		case 'push':
 			ref = payload.ref
 			sha = payload.after
+			pr = issueNumber
 			console.log(`Commit pushed onto ${ref} (${sha})`)
 			break
 
